@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import axios from "axios";
-import redis from "../../../shared/redis/redis.js";
+import redis from "../shared/redis/redis.js"
 
 const BASE_URL = "https://www.googleapis.com/youtube/v3/search";
 
