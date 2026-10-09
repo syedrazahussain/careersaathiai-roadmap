@@ -16,6 +16,14 @@ app.get('/',(req,res)=>{
     res.send("hello from Roadmap service");
 })
 
+
+app.get("/health", (_req, res) => {
+    res.status(200).json({
+        status: "ok",
+        service: "roadmap",
+    });
+});
+
 app.use('/',roadmapRouter)
 
 
